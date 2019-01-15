@@ -1,0 +1,42 @@
+<!doctype html> 
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Nashville Software School</title>
+  <link rel="stylesheet" href="./main.css">
+
+</head>
+
+<body onLoad="genForm.nameArea.focus()">
+  <nav></nav>
+
+  <header>
+    <form id="genForm">
+      <fieldset>
+        <label for="nameArea">Enter your character's name: </label>
+        <input type="text" size="30" id="nameArea" value="Panya">
+      </fieldset>
+      <fieldset>
+        <label for="gender">Gender: </label>
+        <input type="radio" name="gender" value="2">male <input type="radio" name="gender" value="1" checked>female
+      </fieldset>
+      <fieldset>  
+        <label for="style">Style: </label>
+        <input type="radio" name="style" value="1">anime <input type="radio" name="style" value="2" checked>normal
+      </fieldset>
+        <button onClick="pressplay();">Go!</button> <br />
+        <input type="reset" value="clear">
+    </form>
+  </header>
+
+  <article>
+    <header></header>
+    <section id="results"></section>
+    <footer></footer>
+  </article>
+
+  <footer></footer>
+
+  <script src="./main.js"></script>
+</body>
+</html>
